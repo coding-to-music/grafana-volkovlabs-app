@@ -1,3 +1,34 @@
+# grafana-volkovlabs-app
+
+# 🚀 Volkov Labs Application for @grafana 🚀
+
+
+https://github.com/coding-to-music/grafana-volkovlabs-app
+
+From / By https://github.com/volkovlabs/volkovlabs-app
+
+
+## Environment variables:
+
+```java
+```
+
+## user interfaces:
+
+- Grafana http://localhost:3000
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/grafana-volkovlabs-app.git
+git push -u origin main
+```
+
 # Volkov Labs Application for Grafana
 
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)

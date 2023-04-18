@@ -7,6 +7,9 @@ https://github.com/coding-to-music/grafana-volkovlabs-app
 
 From / By https://github.com/volkovlabs/volkovlabs-app
 
+My question:
+
+https://github.com/VolkovLabs/volkovlabs-app/issues/62
 
 ## Environment variables:
 
@@ -51,7 +54,7 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
 56cc6c12076d   ghcr.io/volkovlabs/app:latest   "/run.sh"                5 minutes ago   Up 5 minutes                    0.0.0.0:3000->3000/tcp   grafana
 ```
 
-View the docker run logs
+View the docker run logs, this is repeating:
 
 ```
 nginx exited with code 1

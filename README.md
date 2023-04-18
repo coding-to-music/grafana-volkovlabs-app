@@ -29,6 +29,42 @@ git remote add origin git@github.com:coding-to-music/grafana-volkovlabs-app.git
 git push -u origin main
 ```
 
+## Running 
+
+```
+yarn install
+yarn build
+yarn start
+```
+
+See what is running
+
+```
+docker ps
+```
+
+Output
+
+```
+CONTAINER ID   IMAGE                           COMMAND                  CREATED         STATUS                          PORTS                    NAMES
+4d745d18dfa3   grafana-volkovlabs-app_nginx    "/docker-entrypoint.…"   5 minutes ago   Restarting (1) 30 seconds ago                            nginx
+56cc6c12076d   ghcr.io/volkovlabs/app:latest   "/run.sh"                5 minutes ago   Up 5 minutes                    0.0.0.0:3000->3000/tcp   grafana
+```
+
+View the docker run logs
+
+```
+nginx exited with code 1
+nginx      | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+nginx      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx      | 20-envsubst-on-templates.sh: Running envsubst on /etc/nginx/templates/default.conf.template to /etc/nginx/conf.d/default.conf
+nginx      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx      | /docker-entrypoint.sh: Configuration complete; ready for start up
+nginx      | 2023/04/18 22:44:33 [emerg] 1#1: host not found in upstream "host.docker.internal" in /etc/nginx/conf.d/default.conf:7
+nginx      | nginx: [emerg] host not found in upstream "host.docker.internal" in /etc/nginx/conf.d/default.conf:7
+nginx exited with code 1
+```
+
 # Volkov Labs Application for Grafana
 
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
